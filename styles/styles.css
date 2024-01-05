@@ -1,0 +1,321 @@
+/* ---------------- Global CSS ------------------ */
+
+body{
+    --care: #FA4428;
+    --wine: #D1281C;
+    --ironGall: #14100D;
+    --parchment: #FCF7EB;
+    scroll-behavior: smooth;
+    background-color: var(--parchment);
+}
+
+
+@font-face {
+    font-family: "Obviously";
+    src: url("../assets/fonts/ObviouslyVar-CompTh.otf");
+}
+
+a{
+    text-decoration: none;
+    color: var(--wine);
+}
+
+h1{
+    font-size: 200px;
+    line-height: 90%;
+    font-family: "Obviously";
+    font-weight: 700;
+    font-stretch: 80%;
+}
+
+h2{
+    font-size: 160px;
+    line-height: 100%;
+    font-family: "Obviously";
+    font-weight: 700;
+    font-stretch: 80%;
+    
+}
+
+h3{
+    font-size: 80px;
+    line-height: 100%;
+    font-family: "Obviously";
+    font-weight: 700;
+    font-stretch: 80%;
+}
+
+h4{
+    font-size: 15px;
+    line-height: 100%;
+    font-family: "Obviously";
+    font-weight: 700;
+    font-stretch: 135%;
+}
+
+
+.body-large{
+    font-size: 32px;
+    line-height: 120%;
+    font-family: "Obviously";
+    font-weight: 400;
+    font-stretch: 94%;
+
+}
+
+.body-regular{
+    font-size: 21px;
+    line-height: 130%;
+    font-family: "Obviously";
+    font-weight: 400;
+    font-stretch: 94%;
+
+}
+
+.body-small{
+    font-size: 18px;
+    line-height: 130%;
+    font-family: "Obviously";
+    font-weight: 400;
+    font-stretch: 94%;
+
+}
+
+.body-narrow{
+    font-size: 28px;
+    line-height: 100%;
+    font-family: "Obviously";
+    font-weight: 600;
+    font-stretch: 82%;
+}
+
+.content-container{
+    padding: 32px 56px 56px 56px;
+    width: 100%;
+}
+
+/* ---------------- First Fold ------------------ */
+
+#first-fold{
+    height: 100vh;
+    background-color: var(--care);
+    color: var(--ironGall);
+    overflow: hidden;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    max-width: 1800px;
+    height: 100%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#top-fold-header{
+    width: 85%;
+}
+
+#website-links{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+
+/* ---------------- Video ------------------ */
+
+#video-container{
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+video{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover; 
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+#scrolling-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    color: var(--parchment);
+}
+
+
+
+
+/* ---------------- What we do ------------------ */
+
+#what-we-do{
+    padding-top: 140px;
+    padding-bottom: 140px;
+    color: var(--wine);
+    background-color: var(--parchment);
+    z-index: 100;
+}
+
+.flexbox-48{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+#big{
+font-size: 300px;
+line-height: 90%;
+}
+
+#small{
+    font-size: 80px;
+    margin-top: 0px;
+    position:absolute;
+}
+
+.flexbox-24{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.red-divider{
+    width: 100%;
+    height: 2px;
+    background-color: var(--wine);
+}
+
+
+.services-list{
+    /* width: calc(50% - 12px); */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#services-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.service{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 2px solid var(--wine);
+    height: 100%;
+    color: var(--wine);
+}
+
+.hide{
+    color: var(--parchment);
+    line-height: 100%;
+    display: none;
+}
+
+.service:hover{
+    background-color: var(--wine);
+    color: var(--parchment);
+}
+
+.service:hover .hide{
+    display: block;
+}
+
+/* ---------------- Latest Work ------------------ */
+
+#latest-work{
+    background-color: var(--ironGall);
+    color: var(--parchment);
+    height: 100vh;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.header-beside-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.description{
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+#case-studies{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: start;
+    gap: 32px;
+}
+
+.case-study{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    color: var(--parchment);
+}
+
+.case-study:hover{
+    color: var(--care);
+}
+
+
+.white-divider{
+    width: 100%;
+    height: 2px;
+    background-color: var(--parchment);
+}
+
+
+/* ---------------- OUR TEAM ------------------ */
+
+#our-team{
+    z-index: 1;
+    background-color: var(--parchment);
+}
+
+.description-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+#team-members{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.team-member{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
