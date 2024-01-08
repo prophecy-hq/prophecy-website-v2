@@ -54,7 +54,7 @@ video{
     z-index: -2;
 }
 
-#lottie-container{
+/* #lottie-container{
     height: 200vh;
     width: 200vw;
     object-fit: fill; 
@@ -62,11 +62,36 @@ video{
     z-index: -1;
     rotate: 90deg;
     border: none;
-    /* scale: 1; */
-    /* transform: scale(2); */
     top: -50%;
     left: -50%;
     overflow: visible;
+} */
+
+#team-image{
+    height: 250px;
+    width: calc(250px * 1.334);
+    position: relative;
+    overflow: visible;
+    rotate: -15deg;
+}
+
+#team-image img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#lottie-container{
+    height: 180%;
+    width: 180%;
+    object-fit: cover; 
+    position: absolute;
+    top: -40%;
+    left: -40%;
+    z-index: 2;
+    rotate: -90deg;
 }
 
 #scrolling-text{

@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function() {
   // Intersection Observer callback
   function handleIntersection(entries, observer) {
@@ -17,6 +18,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Setting up the Intersection Observer
   var observer = new IntersectionObserver(handleIntersection, { threshold: 0.1 });
-  var target = document.getElementById('video-container');
+  var target = document.getElementById('team-image');
   observer.observe(target);
 });
