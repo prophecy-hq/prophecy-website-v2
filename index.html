@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/global.css">
         <link rel="stylesheet" href="styles/desktop.css">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        
     </head>
 
 
@@ -35,6 +37,9 @@
          <!-- ----------- Video ---------- -->
 
         <div id = "video-container">
+            <!-- <iframe id = "lottie-animation" src="https://lottie.host/embed/6e5f5386-0f35-4b66-938d-1af8f8e30937/71Px5psIiC.json"></iframe> -->
+            <!-- <lottie-player id = "lottie-animation" src="assets/images-and-videos/scribble-animation.json" background="transparent" speed="1"></lottie-player> -->
+            <div id = "lottie-container"><lottie-player id = "lottie-animation" src="https://lottie.host/3fbffa51-5187-4786-a16f-e2360315f222/2v5I8BNJWt.json" background="transparent" speed="0.5"></lottie-player></div>
             <video autoplay muted loop id="video">
                 <source src="assets/images-and-videos/hero-video.mp4" type="video/mp4">
               </video>
@@ -365,8 +370,11 @@
 
 
         <!-- -------------- Scripts ----------------- -->
-        <!-- <script src = "functions/scrollingLogos.js"></script> -->
         <script src = "functions/formSubmission.js"></script>
+        <script src = "functions/playScribbleAnimation.js"></script>
+        <script src = "functions/videoControl.js"></script>
+
+
     </body>
 
 
