@@ -1,0 +1,413 @@
+
+
+/* ---------------- First Fold ------------------ */
+
+#first-fold{
+    height: 100vh;
+    background-color: var(--care);
+    color: var(--ironGall);
+    overflow: hidden;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: start;
+    max-width: 1800px;
+    height: 100%;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#top-fold-header{
+    width: 85%;
+}
+
+#website-links{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+
+/* ---------------- Video ------------------ */
+
+#video-container{
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+video{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover; 
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: -1;
+}
+
+#scrolling-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+    color: var(--parchment);
+}
+
+
+
+
+/* ---------------- What we do ------------------ */
+
+#what-we-do{
+    padding-top: 140px;
+    padding-bottom: 140px;
+    color: var(--wine);
+    background-color: var(--parchment);
+    z-index: 100;
+}
+
+
+#big{
+font-size: 300px;
+line-height: 90%;
+}
+
+#small{
+    font-size: 80px;
+    margin-top: 0px;
+    position:absolute;
+}
+
+
+.red-divider{
+    width: 100%;
+    height: 2px;
+    background-color: var(--wine);
+}
+
+
+.services-list{
+    /* width: calc(50% - 12px); */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#services-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+.service{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 2px solid var(--wine);
+    height: 100%;
+    color: var(--wine);
+}
+
+.hide{
+    color: var(--parchment);
+    line-height: 100%;
+    display: none;
+}
+
+.service:hover{
+    background-color: var(--wine);
+    color: var(--parchment);
+}
+
+.service:hover .hide{
+    display: block;
+}
+
+/* ---------------- Latest Work ------------------ */
+
+#latest-work{
+    background-color: var(--ironGall);
+    color: var(--parchment);
+    height: 100vh;
+    width: 100%;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.header-beside-description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.description{
+    width: 36%;
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+}
+
+#case-studies{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: start;
+    gap: 32px;
+}
+
+.case-study{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    color: var(--parchment);
+}
+
+.case-study:hover{
+    color: var(--care);
+}
+
+
+.white-divider{
+    width: 100%;
+    height: 2px;
+    background-color: var(--parchment);
+}
+
+
+/* ---------------- IMAGE MARQUEE ---------------- */
+
+.scrolling-wrapper {
+    display: flex;
+    /* overflow-x: auto; */
+    white-space: nowrap;
+}
+
+.scrolling-content {
+    display: inline-flex;
+    animation: scroll 20s linear infinite;
+}
+
+.scrolling-content img {
+    margin: 24px; /* Adjust as needed */
+    height: 64px; /* Adjust as needed */
+    width: auto; /* Keeps the aspect ratio */
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.clients-section{
+    background-color: var(--fairness-dark);
+    color: var(--fairness);
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.clients-section h4{
+    max-width: 36%;
+    margin: 0px 0px 0px 56px;
+}
+
+
+/* ---------------- OUR TEAM ------------------ */
+
+#our-team{
+    z-index: 1;
+    background-color: var(--parchment);
+    color: var(--fairness-dark);
+}
+
+.description-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+#team-members{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.team-member{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+/* ---------------- WHAT'S NEW ------------------ */
+
+#whats-new-section
+{
+    background-color: var(--parchment);
+    color: var(--wine);
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+#whats-new-content{
+    display: flex;
+    flex-direction: row;
+    gap: 48px;
+}
+
+#feed{
+    width: 36%;
+}
+
+#cheatsheet-section{
+    width: auto;
+}
+
+#cheatsheet-image{
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* ---------------- SERVICES ------------------ */
+
+#service-flex{
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+
+#services{
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background-color: var(--ironGall);
+    color: var(--parchment);
+}
+
+#services-header{
+    width: 36%;
+}
+
+/* ---------------- PARTNER WITH US ------------------ */
+
+#partner-with-us{
+    padding-top: 140px;
+    padding-bottom: 140px;
+    background-color: var(--wine);
+    color: var(--parchment);
+    height: 110vh;
+}
+
+#contact-row-flex{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-content{
+    justify-content: flex-start;
+    width: 70%;
+    height: 100%;
+}
+
+.right-content{
+    padding-top: 100px;
+    justify-content: flex-end;
+    width: 30%;
+    height: 100%;
+}
+
+
+/* ---------------- CONTACT FORM ------------------ */
+
+#contact-image{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.contact-form{
+    display: grid;
+    gap: 0px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border: 2px solid var(--parchment);
+    border-radius: 8px;
+    background-color: #DE3020;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #DE3020;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 24px 16px;
+    border: none;
+    border-bottom: 2px solid var(--parchment); 
+    color: var(--parchment);
+    background-color: #DE3020;
+    /* border-radius: 8px; */
+}
+
+.contact-form textarea{
+    padding: 24px 16px;
+    padding-bottom: 120px;
+    resize: none;
+}
+
+.contact-form button {
+    padding: 16px;
+    background-color: var(--parchment);
+    color: var(--wine);
+    border: none;
+    cursor: pointer;
+    margin: 16px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    
+}
+
+.contact-form ::placeholder{
+    color: var(--parchment);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form button:focus{
+    outline: none;
+    box-shadow: none;
+}   
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 80px #DE3020 inset !important;
+    -webkit-text-fill-color:var(--parchment) !important ;
+}
+
+
+/* ---------------- FOOTER ------------------ */

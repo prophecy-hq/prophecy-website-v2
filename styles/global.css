@@ -1,0 +1,183 @@
+/* ---------------- Global CSS ------------------ */
+
+body{
+    --care: #FA4428;
+    --wine: #D1281C;
+    --ironGall: #14100D;
+    --parchment: #FCF7EB;
+    --fairness: #9BF07D;
+    --fairness-dark: #213116;
+    /* scroll-behavior: smooth; */
+    background-color: var(--parchment);
+    overflow-x: hidden;
+}
+
+
+
+@font-face {
+    font-family: "Obviously";
+    src: url("../assets/fonts/ObviouslyVar-CompTh.otf");
+}
+
+a{
+    text-decoration: none;
+    color: var(--wine);
+}
+
+h1{
+    font-size: 200px;
+    line-height: 90%;
+    font-family: "Obviously";
+    font-weight: 700;
+    font-stretch: 80%;
+}
+
+h2{
+    font-size: 160px;
+    line-height: 100%;
+    font-family: "Obviously";
+    font-weight: 700;
+    font-stretch: 80%;
+    
+}
+
+h3{
+    font-size: 80px;
+    line-height: 100%;
+    font-family: "Obviously";
+    font-weight: 700;
+    font-stretch: 80%;
+}
+
+h4{
+    font-size: 48px;
+    line-height: 120%;
+    font-family: "Obviously";
+    font-weight: 500;
+    font-stretch: 80%;
+}
+
+h5{
+    font-size: 15px;
+    line-height: 100%;
+    font-family: "Obviously";
+    font-weight: 700;
+    font-stretch: 135%;
+    text-transform: uppercase;
+}
+
+
+.body-large{
+    font-size: 32px;
+    line-height: 120%;
+    font-family: "Obviously";
+    font-weight: 400;
+    font-stretch: 94%;
+
+}
+
+.body-regular{
+    font-size: 21px;
+    line-height: 130%;
+    font-family: "Obviously";
+    font-weight: 400;
+    font-stretch: 94%;
+
+}
+
+.body-small{
+    font-size: 18px;
+    line-height: 130%;
+    font-family: "Obviously";
+    font-weight: 400;
+    font-stretch: 94%;
+
+}
+
+.caption{
+    font-size: 14px;
+    line-height: 130%;
+    font-family: "Obviously";
+    font-weight: 400;
+    font-stretch: 94%;
+
+}
+
+.caption-bold{
+    font-size: 14px;
+    line-height: 130%;
+    font-family: "Obviously";
+    font-weight: 600;
+    font-stretch: 94%;
+
+}
+
+.body-narrow{
+    font-size: 28px;
+    line-height: 100%;
+    font-family: "Obviously";
+    font-weight: 600;
+    font-stretch: 82%;
+}
+
+.content-container{
+    padding: 32px 56px 56px 56px;
+    width: 100%;
+}
+
+.flexbox-0{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.flexbox-8{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.flexbox-16{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.flexbox-24{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.flexbox-48{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.flexbox-64{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.flexbox-96{
+    display: flex;
+    flex-direction: column;
+    gap: 96px;
+}
+
+.flex-row-16{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.w36{
+    width: 36%;
+}
+
+.w50{
+    width: 50%;
+}
