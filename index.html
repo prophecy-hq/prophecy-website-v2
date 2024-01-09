@@ -7,23 +7,26 @@
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/global.css">
         <link rel="stylesheet" href="styles/desktop.css">
+        <link rel="stylesheet" href="styles/cursor.css">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         
     </head>
 
 
     <body>
+        <div id="customCursor" class="cursor"></div>
+
         <!-- ----------- First Fold ---------- -->
         <div id = "first-fold" class = "content-container">
             <div class = "content">
                 <div class = "header">
                     <div id = "logo">
-                        PROPHECY
+                        <a href = "index.html"><img src = "assets/images-and-videos/logos/prophecyLogo.svg" /></a>
                     </div>
-                    <div id = "website-links">
-                        <a>Website</a>
-                        <a>Links</a>
-                        <a>Here</a>
+                    <div id = "website-links" class="caption">
+                        <a id = "latest-work-link" href = "#latest-work">Work</a>
+                        <a href = "#">Service</a>
+                        <a id = "partner-with-us-link" href = "#partner-with-us">Contact Us</a>
                     </div>
                 </div>
                 <div>
@@ -34,22 +37,29 @@
             </div>
         </div>
 
-         <!-- ----------- Video ---------- -->
+        <!-- ----------- Video ---------- -->
 
         <div id = "video-container">
             <!-- <iframe id = "lottie-animation" src="https://lottie.host/embed/6e5f5386-0f35-4b66-938d-1af8f8e30937/71Px5psIiC.json"></iframe> -->
             <!-- <lottie-player id = "lottie-animation" src="assets/images-and-videos/scribble-animation.json" background="transparent" speed="1"></lottie-player> -->
             <!-- <div id = "lottie-container"><lottie-player id = "lottie-animation" src="https://lottie.host/3fbffa51-5187-4786-a16f-e2360315f222/2v5I8BNJWt.json" background="transparent" speed="0.5"></lottie-player></div> -->
-            <video autoplay muted loop id="video">
+            <video preload="auto" autoplay muted loop id="video">
                 <source src="assets/images-and-videos/hero-video.mp4" type="video/mp4">
               </video>
+
+              <div class = "full-bleed" id = "purple-overlay"></div>
+             <!--  <div class = "full-bleed" id = "red-overlay"></div> -->
         </div>
 
         <div id = "scrolling-text">
-            <h1>DESIGN DRIVEN<br />ZERO TO ONE</h1>
+            <h1>DESIGN DRIVEN ZERO TO ONE</h1>
+            <div class = "body-large w50" id = "text-right">We want to imbue the world with joy, care and ingenuity by creating tools that empower people to achieve unimagined possibilities.</div>
         </div>
+        
+    
 
         <!-- ----------- What we do ---------- -->
+
         <div id = "what-we-do" class = "content-container">
             <div class = "content">
                 <div class = "flexbox-48">
@@ -64,37 +74,49 @@
                         <div id = "services-container">
                             <div class = "services-list">
                                 <a class = "service" href = "#">
-                                    <div class = "body-narrow">Service</div>
+                                    <div class = "body-narrow">Desirability</div>
                                     <div class = "hide">See all services</div>
                                 </a>
                                 <a class = "service" href = "#">
-                                    <div class = "body-narrow">Service</div>
+                                    <div class = "body-narrow">Positioning</div>
                                     <div class = "hide">See all services</div>
                                 </a>
                                 <a class = "service" href = "#">
-                                    <div class = "body-narrow">Service</div>
+                                    <div class = "body-narrow">Differentiations</div>
                                     <div class = "hide">See all services</div>
                                 </a>
                                 <a class = "service" href = "#">
-                                    <div class = "body-narrow">Service</div>
+                                    <div class = "body-narrow">Red Oceans</div>
                                     <div class = "hide">See all services</div>
                                 </a>
                             <!-- </div> -->
                             <!-- <div class = "services-list"> -->
                                 <a class = "service" href = "#">
-                                    <div class = "body-narrow">Service</div>
+                                    <div class = "body-narrow">Ecosystems</div>
                                     <div class = "hide">See all services</div>
                                 </a>
                                 <a class = "service" href = "#">
-                                    <div class = "body-narrow">Service</div>
+                                    <div class = "body-narrow">Digital + physical</div>
                                     <div class = "hide">See all services</div>
                                 </a>
                                 <a class = "service" href = "#">
-                                    <div class = "body-narrow">Service</div>
+                                    <div class = "body-narrow">Product-led growth</div>
                                     <div class = "hide">See all services</div>
                                 </a>
                                 <a class = "service" href = "#">
-                                    <div class = "body-narrow">Service</div>
+                                    <div class = "body-narrow">Monetisation</div>
+                                    <div class = "hide">See all services</div>
+                                </a>
+                                <a class = "service" href = "#">
+                                    <div class = "body-narrow">New products</div>
+                                    <div class = "hide">See all services</div>
+                                </a>
+                                <a class = "service" href = "#">
+                                    <div class = "body-narrow">Redesigns</div>
+                                    <div class = "hide">See all services</div>
+                                </a>
+                                <a class = "service" href = "#">
+                                    <div class = "body-narrow">Monetisation</div>
                                     <div class = "hide">See all services</div>
                                 </a>
                             </div>
@@ -123,15 +145,15 @@
                     </div>
                 </div>
                 <div id = "case-studies">
-                    <a id = "loop-case-study" class = "case-study" href="#">
+                    <div id = "loop-case-study" class = "case-study hoverable" data-cursor-text="Coming soon">
                         <div class = "body-regular">Innovating in India’s healthcare consumer space</div>
                         <h3>LOOP HEALTH</h3>
-                    </a>
-                    <div class = "white-divider" href = "#"></div>
-                    <a id = "headout-case-study" class = "case-study">
+                    </div>
+                    <div class = "white-divider"></div>
+                    <div id = "headout-case-study" class = "case-study hoverable" data-cursor-text="Coming soon">
                         <div class = "body-regular">Creating a seamless platform to manage listings</div>
                         <h3>HEADOUT</h3>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -156,19 +178,19 @@
                             <div class = "body-regular">We are a team of senior designers  that traverses both strategy and implementation, where each member goes deep into their work, rather than being tied up in layers of people management.</div>
                             <div id = "team-members">
                                 <div class = "team-member">
-                                    <h5>Aakash Aggarwal</h5>
+                                    <a href = "https://www.linkedin.com/in/aggarwal-aakash/" class = "hoverable" data-cursor-text="View LinkedIn" target = "_blank"><h5>Aakash Aggarwal</h5></a>
+                                    <div class = "body-small">An interaction designer with an educational background from CIID.</div>
+                                </div>
+                                <div class = "team-member">
+                                    <a href = "https://www.linkedin.com/in/akshayverma1/" target = "_blank" class = "hoverable" data-cursor-text="View LinkedIn"><h5>Akshay Verma</h5></a>
                                     <div class = "body-small">We prototype in the first week, and every week after.</div>
                                 </div>
                                 <div class = "team-member">
-                                    <h5>Akshay Verma</h5>
+                                    <a href = "https://www.linkedin.com/in/akshayverma1/" class = "hoverable" data-cursor-text="View LinkedIn" target = "_blank"><h5>Mahima Chandak</h5></a>
                                     <div class = "body-small">We prototype in the first week, and every week after.</div>
                                 </div>
                                 <div class = "team-member">
-                                    <h5>Mahima Chandak</h5>
-                                    <div class = "body-small">We prototype in the first week, and every week after.</div>
-                                </div>
-                                <div class = "team-member">
-                                    <h5>Siddharth Ahuja<h5>
+                                    <a href = "https://www.linkedin.com/in/ahujasid/" class = "hoverable" data-cursor-text="View LinkedIn" target = "_blank"><h5>Siddharth Ahuja<h5></a>
                                     <div class = "body-small">We prototype in the first week, and every week after.</div>
                                 </div>
                             </div>
@@ -237,54 +259,58 @@
         <!-- ----------- What's New ---------- -->
         <div id = "whats-new-section" class="content-container">
             <div class = "content">
-                <div>
-                    <h1>WHAT'S NEW</h1>
-                    <div id = "decoration"></div>
-                </div>
 
-                <div id = "whats-new-content">
-                    <div id = "feed" class ="flexbox-64">
-                        <div class = "feed-item flexbox-8">
-                            <h5>Panel discussion at Rooh Search 2023</h5>
-                            <p class = "body-small">Akshay and Mahima are teaching innovation, interaction design and user research for ownpath’s Product Design Fellowship.</p>
-                        </div>
-                        <div class = "feed-item flexbox-8">
-                            <h5>TEACHING AT OWNPATH</h5>
-                            <p class = "body-small">Akshay and Mahima are teaching innovation, interaction design and user research for ownpath’s Product Design Fellowship.</p>
-                        </div>
-                        <div class = "feed-item flexbox-8">
-                            <h5>Advising at Antler</h5>
-                            <p class = "body-small">Advising early-stage founders through design-thinking workshops and office hours for Anter’s India Founders Program.</p>
-                        </div>
-                        <div class = "feed-item flexbox-8">
-                            <h5>Advising at Antler</h5>
-                            <p class = "body-small">Advising early-stage founders through design-thinking workshops and office hours for Anter’s India Founders Program.</p>
-                        </div>
-                    </div>
+                <div class = "flexbox-64">
                    
-                    <div id = "cheatsheet-section" class = "flexbox-24">
-                        <img id = "cheatshheet-image" src="assets/images-and-videos/cheatsheet.png"></img>
-                        <h4>The Product Design Cheatsheet</h4>
-                        <div class = "body-regular">A virally shared cheatsheet that talks about our process, recommended by</div>
-                       
-                        <!-- <div id = "cheatsheet-twitter-shares">
-                            <div class = "twitter-quote-container">
-                                <div class = "twitter-quote-inner-container">
-                                    <div class = "caption">Guide for early-stage product teams on how to rapidly experiment, learn and build new products</div>
-                                    <div class = "flex-row-16">
-                                        <img src="https://placehold.co/48x48"></img>
-                                        <div class = "flex-box-8">
-                                            <div class = "caption-bold">Nick Babich</div>
-                                            <div class = "caption">Editor of UX Planet</div>
+                   <div class = "flexbox-24">
+                        <h1>WHAT'S NEW</h1>
+                        <div class = "red-divider"></div>
+                    </div>
+
+                    <div id = "whats-new-content" class = "flex-row-16">
+                        <div id = "feed" class ="flexbox-64">
+                            <div class = "feed-item flexbox-8">
+                                <h5>Panel discussion at Rooh Search 2023</h5>
+                                <p class = "body-small">Akshay and Mahima are teaching innovation, interaction design and user research for ownpath’s Product Design Fellowship.</p>
+                            </div>
+                            <div class = "feed-item flexbox-8">
+                                <h5>TEACHING AT OWNPATH</h5>
+                                <p class = "body-small">Akshay and Mahima are teaching innovation, interaction design and user research for ownpath’s Product Design Fellowship.</p>
+                            </div>
+                            <div class = "feed-item flexbox-8">
+                                <h5>Advising at Antler</h5>
+                                <p class = "body-small">Advising early-stage founders through design-thinking workshops and office hours for Anter’s India Founders Program.</p>
+                            </div>
+                            <div class = "feed-item flexbox-8">
+                                <h5>Advising at Antler</h5>
+                                <p class = "body-small">Advising early-stage founders through design-thinking workshops and office hours for Anter’s India Founders Program.</p>
+                            </div>
+                        </div>
+                    
+                        <div id = "cheatsheet-section" class = "flexbox-24">
+                            <img id = "cheatshheet-image" src="assets/images-and-videos/cheatsheet.png"></img>
+                            <h4>The Product Design Cheatsheet</h4>
+                            <div class = "body-regular">A virally shared cheatsheet that talks about our process, recommended by</div>
+                        
+                            <!-- <div id = "cheatsheet-twitter-shares">
+                                <div class = "twitter-quote-container">
+                                    <div class = "twitter-quote-inner-container">
+                                        <div class = "caption">Guide for early-stage product teams on how to rapidly experiment, learn and build new products</div>
+                                        <div class = "flex-row-16">
+                                            <img src="https://placehold.co/48x48"></img>
+                                            <div class = "flex-box-8">
+                                                <div class = "caption-bold">Nick Babich</div>
+                                                <div class = "caption">Editor of UX Planet</div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div> -->
+                            </div> -->
 
-                        <div>Want a copy for your office or home? Email us.</div>
+                            <div>Want a copy for your office or home? Email us.</div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
 
@@ -300,7 +326,7 @@
 
 
                 <div class = "flexbox-48">
-                    <div id = "service-flex">
+                    <div class = "service-flex">
                         <div class = "flexbox-8">
                             <h5>Gain deep empathy</h5>
                             <p class = "body-small">A deep understanding of the users, not just a technical analysis of their pain points, but their values, desires, behaviour and needs—insight into the living, breathing people that they are.</p>
@@ -314,7 +340,7 @@
                             <p class = "body-small">A deep understanding of the users, not just a technical analysis of their pain points, but their values, desires, behaviour and needs—insight into the living, breathing people that they are.</p>
                         </div>
                     </div>
-                    <div id = "service-flex">
+                    <div class = "service-flex">
                         <div class = "flexbox-8">
                             <h5>Gain deep empathy</h5>
                             <p class = "body-small">A deep understanding of the users, not just a technical analysis of their pain points, but their values, desires, behaviour and needs—insight into the living, breathing people that they are.</p>
@@ -375,7 +401,10 @@
         <!-- -------------- Scripts ----------------- -->
         <script src = "functions/formSubmission.js"></script>
         <script src = "functions/playScribbleAnimation.js"></script>
+        <script src = "functions/smoothScroll.js"></script>
+        <script src = "functions/cursor.js"></script>
         <script src = "functions/videoControl.js"></script>
+        <script src = "functions/scaleDownVideo.js"></script>
 
 
     </body>

@@ -9,6 +9,21 @@
     overflow: hidden;
 }
 
+#first-fold a{
+    color: var(--ironGall);
+    transition: 0.3s;
+}
+
+#first-fold a:hover{
+    color: var(--parchment);
+    transition: 0.3s;
+}
+
+#logo img{
+    height: 24px;
+    width: auto;
+}
+
 .content{
     display: flex;
     justify-content: space-between;
@@ -32,7 +47,8 @@
 #website-links{
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap: 48px;
+    color: var(--ironGall);
 }
 
 
@@ -42,6 +58,7 @@
     width: 100vw;
     height: 100vh;
     z-index: -1;
+    /* -webkit-transform: translate3d(0,0,0); */
 }
 
 video{
@@ -51,8 +68,36 @@ video{
     top: 0;
     left: 0;
     position: fixed;
-    z-index: -2;
+    z-index: -3;
+    transform: none;
+    /* -webkit-transform: translate3d(0,0,0); */
+    -webkit-backface-visibility: hidden;
+    /* -webkit-transform: translateZ(0); */
 }
+
+.full-bleed{
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover; 
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+/* #red-overlay{
+    background-color: #FB505B;
+    mix-blend-mode: lighten;
+    z-index: -1;
+    opacity: 20%;
+}*/
+
+#purple-overlay{
+    background-color: #4230A3;
+    mix-blend-mode: multiply;
+    z-index: -1;
+    /* -webkit-transform: translate3d(0,0,0); */
+    opacity: 0;
+} 
 
 /* #lottie-container{
     height: 200vh;
@@ -67,41 +112,22 @@ video{
     overflow: visible;
 } */
 
-#team-image{
-    height: 250px;
-    width: calc(250px * 1.334);
-    position: relative;
-    overflow: visible;
-    rotate: -15deg;
-}
-
-#team-image img{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-#lottie-container{
-    height: 180%;
-    width: 180%;
-    object-fit: cover; 
-    position: absolute;
-    top: -40%;
-    left: -40%;
-    z-index: 2;
-    rotate: -90deg;
-}
 
 #scrolling-text{
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    text-align: center;
+    text-align: center; /* Center the container */
+    width: 70%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container on the page */
     height: 90vh;
     color: var(--parchment);
+  
+}
+
+#text-right{
+    width: 50%; /* Half width of the header */
+    display: inline-block; /* Allows width to be set */
+    text-align: left; /* Align text to the left within the paragraph */
+    margin-left: 40%; 
+    margin-top: 24px;
 }
 
 
@@ -160,17 +186,26 @@ line-height: 90%;
     border-bottom: 2px solid var(--wine);
     height: 100%;
     color: var(--wine);
+    transition: 0.3s;
 }
 
 .hide{
     color: var(--parchment);
     line-height: 100%;
     display: none;
+    font-size: 14px;
+    line-height: 130%;
+    font-family: "Obviously";
+    font-weight: 600;
+    font-stretch: 94%;
+    padding-right: 16px;
+    margin-top: 3px;
 }
 
 .service:hover{
     background-color: var(--wine);
     color: var(--parchment);
+    transition: 0.2s;
 }
 
 .service:hover .hide{
@@ -182,10 +217,10 @@ line-height: 90%;
 #latest-work{
     background-color: var(--ironGall);
     color: var(--parchment);
-    height: 100vh;
+    height: 120vh;
     width: 100%;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 140px;
+    padding-bottom: 180px;
 }
 
 .header-beside-description{
@@ -222,7 +257,6 @@ line-height: 90%;
 .case-study:hover{
     color: var(--care);
 }
-
 
 .white-divider{
     width: 100%;
@@ -274,7 +308,19 @@ line-height: 90%;
     z-index: 1;
     background-color: var(--parchment);
     color: var(--fairness-dark);
+    padding-top: 140px;
+    padding-bottom: 140px;
 }
+
+.team-member a{
+    color: var(--fairness-dark);
+    transition: 0.3s;
+}
+
+.team-member a:hover{
+    color: var(--wine);
+}
+
 
 .description-flex{
     display: flex;
@@ -294,6 +340,35 @@ line-height: 90%;
     gap: 8px;
 }
 
+#team-image{
+    height: 250px;
+    width: calc(250px * 1.334);
+    position: relative;
+    overflow: visible;
+    rotate: -15deg;
+}
+
+#team-image img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#lottie-container{
+    height: 150%;
+    width: 150%;
+    object-fit: cover; 
+    position: absolute;
+    top: -24%;
+    left: -24%;
+    z-index: 2;
+    rotate: -90deg;
+    /* background-color: rgba(0,0,0,0.3); */
+}
+
+
 
 /* ---------------- WHAT'S NEW ------------------ */
 
@@ -309,6 +384,8 @@ line-height: 90%;
     display: flex;
     flex-direction: row;
     gap: 48px;
+    width: 100%;
+    justify-content: space-between;
 }
 
 #feed{
@@ -328,7 +405,7 @@ line-height: 90%;
 
 /* ---------------- SERVICES ------------------ */
 
-#service-flex{
+.service-flex{
     display: flex;
     flex-direction: row;
     gap: 64px;

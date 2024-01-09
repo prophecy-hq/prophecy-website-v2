@@ -1,0 +1,51 @@
+.cursor {
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--parchment);
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 1000;
+    mix-blend-mode: difference;
+    text-align: center;
+    line-height: 130%;
+    transition: width 0.3s ease, height 0.3s ease, margin 0.3s ease;
+    
+}
+
+.cursor-large {
+    width: 64px; /* Larger size */
+    height: 64px; /* Larger size */
+    border: 2px solid var(--parchment);
+    border-radius: 50%;
+    margin-left: -20px; /* Half of the width to keep the cursor centered */
+    margin-top: -20px; /* Half of the height to keep the cursor centered */
+    mix-blend-mode: difference;
+}
+
+.cursor-text-only span {
+    /* position: absolute;
+    top: -30px; 
+    left: 50%; */
+    color: var(--parchment);
+    /* transform: translateX(-50%); */
+    white-space: nowrap; 
+    font-size: 21px;
+    line-height: 130%;
+    font-family: "Obviously";
+    font-weight: 600;
+    font-stretch: 94%;
+    display: block;
+    transform: none;
+    margin-left: -64px;
+    margin-top: -24px;
+}
+
+.cursor-text-only {
+    width: auto;
+    height: auto;
+    border: none;
+    background: none;
+    margin: 0;
+}

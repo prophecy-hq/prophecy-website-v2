@@ -12,7 +12,15 @@ body{
     overflow-x: hidden;
 }
 
+html{
+    /* -webkit-transform: translate3d(0,0,0); */
+  }
 
+
+::selection {
+    color: var(--parchment);
+    background: var(--ironGall);
+  }
 
 @font-face {
     font-family: "Obviously";
