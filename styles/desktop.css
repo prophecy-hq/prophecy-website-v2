@@ -70,10 +70,17 @@ video{
     position: fixed;
     z-index: -3;
     transform: none;
-    /* -webkit-transform: translate3d(0,0,0); */
     -webkit-backface-visibility: hidden;
-    /* -webkit-transform: translateZ(0); */
 }
+
+/* video{
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover;  */
+    /* position: relative; */
+    /* padding: 56px; */
+    /* -webkit-backface-visibility: hidden; */
+/*} */
 
 .full-bleed{
     height: 100vh;
