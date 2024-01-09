@@ -13,11 +13,12 @@ body{
 
     /* scroll-behavior: smooth; */
     background-color: var(--parchment);
-    overflow-x: hidden;
+
 }
 
 html{
     /* -webkit-transform: translate3d(0,0,0); */
+    overflow-x: hidden;
   }
 
 
