@@ -1,12 +1,16 @@
 /* ---------------- Global CSS ------------------ */
-
-body{
+:root{
     --care: #FA4428;
     --wine: #D1281C;
     --ironGall: #14100D;
     --parchment: #FCF7EB;
     --fairness: #9BF07D;
     --fairness-dark: #213116;
+}
+
+
+body{
+
     /* scroll-behavior: smooth; */
     background-color: var(--parchment);
     overflow-x: hidden;
