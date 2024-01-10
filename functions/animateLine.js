@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('loaderFinished', () => {
     // ... existing code for text animation ...
     let serviceObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -28,3 +28,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
 });
+

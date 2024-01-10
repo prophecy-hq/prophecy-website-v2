@@ -12,10 +12,13 @@
 body{
     /* scroll-behavior: smooth; */
     background-color: var(--parchment);
+    overflow-x: hidden;
+    position: relative;
 }
 
 html{
     overflow-x: hidden;
+    position: relative;
   }
 
 

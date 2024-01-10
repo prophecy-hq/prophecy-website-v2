@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('loaderFinished', () => {
     document.querySelectorAll('.animated-text').forEach(element => {
         // Split the text by spaces and filter out empty strings
         let words = element.textContent.split(/\s+/).filter(word => word.length > 0);
