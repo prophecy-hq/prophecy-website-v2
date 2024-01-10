@@ -21,7 +21,7 @@
 .animated-word span {
     display: inline-block;
     transform: translateY(100%);
-    transition: transform 0.5s ease;
+    transition: transform 1s ease;
     transition-delay: var(--delay);
 }
 

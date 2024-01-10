@@ -163,12 +163,6 @@ line-height: 90%;
 }
 
 
-.red-divider{
-    width: 100%;
-    height: 2px;
-    background-color: var(--wine);
-}
-
 
 .services-list{
     /* width: calc(50% - 12px); */
@@ -190,10 +184,26 @@ line-height: 90%;
     flex-direction: row;
     justify-content: space-between;
     padding: 20px 0px 20px 0px;
-    border-bottom: 2px solid var(--wine);
+    /* border-bottom: 2px solid var(--wine); */
+    position: relative;
     height: 100%;
     color: var(--wine);
-    transition: 0.3s;
+    transition: background-color 0.3s;
+}
+
+.service::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Start with 0 width */
+    height: 2px;
+    background-color: var(--wine);
+    transition: width 1s ease-out; /* Animation effect */
+}
+
+.animate-border::after {
+    width: 100%; /* Full width on animation */
 }
 
 .hide{
@@ -265,11 +275,6 @@ line-height: 90%;
     color: var(--care);
 }
 
-.white-divider{
-    width: 100%;
-    height: 2px;
-    background-color: var(--parchment);
-}
 
 
 /* ---------------- IMAGE MARQUEE ---------------- */

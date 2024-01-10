@@ -10,14 +10,11 @@
 
 
 body{
-
     /* scroll-behavior: smooth; */
     background-color: var(--parchment);
-
 }
 
 html{
-    /* -webkit-transform: translate3d(0,0,0); */
     overflow-x: hidden;
   }
 
@@ -193,4 +190,22 @@ h5{
 
 .w50{
     width: 50%;
+}
+
+.white-divider{
+    width: 0;
+    height: 2px;
+    background-color: var(--parchment);
+    transition: width 1s ease-out;
+}
+
+.red-divider{
+    width: 0;
+    height: 2px;
+    background-color: var(--wine);
+    transition: width 1s ease-out;
+}
+
+.animate-line {
+    width: 100%; /* Full width on animation */
 }
