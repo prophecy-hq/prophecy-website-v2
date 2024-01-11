@@ -14,7 +14,7 @@ document.addEventListener('loaderFinished', () => {
                 entry.target.classList.add('triggered');
             }
         });
-    }, { threshold: [0.1] });
+    }, { threshold: [0.5] });
 
     document.querySelectorAll('.animated-section').forEach(section => {
         observer.observe(section);

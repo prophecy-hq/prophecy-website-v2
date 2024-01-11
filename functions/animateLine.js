@@ -19,7 +19,7 @@ document.addEventListener('loaderFinished', () => {
                 entry.target.classList.add('animate-line');
             }
         });
-    }, { threshold: [0.1] });  // Adjust the threshold as needed
+    }, { threshold: [0.5] });  // Adjust the threshold as needed
 
     // Observe both red and white dividers
     document.querySelectorAll('.red-divider, .white-divider').forEach(line => {

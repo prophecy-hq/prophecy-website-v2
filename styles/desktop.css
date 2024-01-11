@@ -52,73 +52,7 @@
 }
 
 
-/* ---------------- Video ------------------ */
-
-#video-container{
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    /* -webkit-transform: translate3d(0,0,0); */
-}
-
-video{
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover; 
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index: -3;
-    transform: none;
-    -webkit-backface-visibility: hidden;
-}
-
-/* video{
-    height: 100%;
-    width: 100%;
-    /* object-fit: cover;  */
-    /* position: relative; */
-    /* padding: 56px; */
-    /* -webkit-backface-visibility: hidden; */
-/*} */
-
-.full-bleed{
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover; 
-    top: 0;
-    left: 0;
-    position: fixed;
-}
-
-/* #red-overlay{
-    background-color: #FB505B;
-    mix-blend-mode: lighten;
-    z-index: -1;
-    opacity: 20%;
-}*/
-
-#purple-overlay{
-    background-color: #4230A3;
-    mix-blend-mode: multiply;
-    z-index: -1;
-    /* -webkit-transform: translate3d(0,0,0); */
-    opacity: 0;
-} 
-
-/* #lottie-container{
-    height: 200vh;
-    width: 200vw;
-    object-fit: fill; 
-    position: fixed;
-    z-index: -1;
-    rotate: 90deg;
-    border: none;
-    top: -50%;
-    left: -50%;
-    overflow: visible;
-} */
-
+/* ---------------- Scrolling text ------------------ */
 
 #scrolling-text{
     text-align: center; /* Center the container */
@@ -466,77 +400,23 @@ line-height: 90%;
 }
 
 
-/* ---------------- CONTACT FORM ------------------ */
-
-#contact-image{
-    position: relative;
-    width: 100%;
-    height: auto;
-}
-
-.contact-form{
-    display: grid;
-    gap: 0px;
-    padding-bottom: 4px;
-    padding-top: 4px;
-    border: 2px solid var(--parchment);
-    border-radius: 8px;
-    background-color: #DE3020;
-}
-
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr;
-    background-color: #DE3020;
-}
-
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-    padding: 24px 16px;
-    border: none;
-    border-bottom: 2px solid var(--parchment); 
-    color: var(--parchment);
-    background-color: #DE3020;
-    /* border-radius: 8px; */
-}
-
-.contact-form textarea{
-    padding: 24px 16px;
-    padding-bottom: 120px;
-    resize: none;
-}
-
-.contact-form button {
-    padding: 16px;
-    background-color: var(--parchment);
-    color: var(--wine);
-    border: none;
-    cursor: pointer;
-    margin: 16px;
-    margin-bottom: 12px;
-    border-radius: 8px;
-    
-}
-
-.contact-form ::placeholder{
-    color: var(--parchment);
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus,
-.contact-form button:focus{
-    outline: none;
-    box-shadow: none;
-}   
-
-input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
-    -webkit-box-shadow: 0 0 0 80px #DE3020 inset !important;
-    -webkit-text-fill-color:var(--parchment) !important ;
-}
 
 
 /* ---------------- FOOTER ------------------ */
+
+.footer{
+    background-color: var(--ironGall);
+    color: var(--parchment);
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.footer a{
+    color: var(--parchment);
+    transition: color 0.3s;
+}
+
+.footer a:hover{
+    color: var(--care);
+}
+

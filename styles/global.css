@@ -107,9 +107,18 @@ h5{
 
 }
 
+.body-small-bold{
+    font-size: 18px;
+    line-height: 130%;
+    font-family: "Obviously";
+    font-weight: 600;
+    font-stretch: 94%;
+
+}
+
 .caption{
     font-size: 14px;
-    line-height: 130%;
+    line-height: 140%;
     font-family: "Obviously";
     font-weight: 400;
     font-stretch: 94%;
@@ -187,6 +196,12 @@ h5{
     gap: 16px;
 }
 
+.flex-row-justified{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .w36{
     width: 36%;
 }
@@ -211,4 +226,8 @@ h5{
 
 .animate-line {
     width: 100%; /* Full width on animation */
+}
+
+.lh150{
+    line-height: 150%;
 }
