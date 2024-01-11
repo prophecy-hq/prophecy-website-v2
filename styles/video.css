@@ -26,11 +26,11 @@
 #video-container{
     width: 100vw;
     height: 100vh;
-    z-index: -1;
+    z-index: -3;
     /* -webkit-transform: translate3d(0,0,0); */
 }
 
-video{
+#video{
     height: 100vh;
     width: 100vw;
     object-fit: cover; 
@@ -88,3 +88,17 @@ video{
 } */
 
 
+
+/* ---------------- Case study videos ------------------ */
+
+#case-study-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; /* Adjust as needed to overlay the black background */
+    display: none; /* Hide it initially */
+    transform: none;
+}
