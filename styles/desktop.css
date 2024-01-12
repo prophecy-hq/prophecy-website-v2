@@ -334,10 +334,74 @@ line-height: 90%;
     width: auto;
 }
 
+#cheatsheet-image-container{
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
 #cheatsheet-image{
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
+
+#cheatsheet-banner{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--wine);
+    /* margin: 0px 8px 8px 8px; */
+    padding: 12px 16px;
+    color: var(--parchment);
+}
+
+.twitter-quote-container:hover {
+    transform: translateY(-8px);
+    z-index: 10 !important;
+    background-color: #FBF1DF;
+  }
+
+#twitter-cards-container{
+    position: relative;
+    width: 100%;
+}
+
+.twitter-quote-container{
+    position: absolute;
+    display: block;
+    width: 40%;
+    border-radius: 8px;
+    border: 2px solid var(--care);
+    padding: 8px;
+    transition: 0.4s;
+    background-color: var(--parchment);
+    height: max-content;
+}
+
+#twitter-card-1{
+    left: 0;
+    z-index: 3;
+}
+
+#twitter-card-2{
+    left: 33%;
+    z-index: 2;
+}
+
+#twitter-card-3{
+    left: 60%;
+    z-index: 1;
+}
+
+.twitter-quote-inner-container{
+    width: 100%;
+    border-radius: 6px;
+    border: 2px dashed var(--care);
+    padding: 8px;
+}
+
+
 
 
 
