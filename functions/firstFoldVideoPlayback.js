@@ -33,7 +33,7 @@ function fadeIn(element, callback) {
             clearInterval(interval);
             callback();
         }
-    }, 80);
+    }, 60);
 }
 
 function fadeOut(element, callback) {
@@ -47,5 +47,5 @@ function fadeOut(element, callback) {
             element.pause(); // Pause the video after fading out
             callback();
         }
-    }, 80);
+    }, 60);
 }
